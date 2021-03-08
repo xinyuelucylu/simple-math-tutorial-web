@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2017 mathsisfun.com -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300.9" height="33.1" version="1.1" style="font-family:'Comic Sans MS'; font-size:34px; stroke-width:0.32px;">
+
+<g transform="translate(102.236,-793.07)">
+	<text x="-101" y="824.7" style="color:black; overflow:visible; fill:#c4a000;">a</text>
+	<text x="-81" y="824.7" style="color:black; overflow:visible; fill:#204a87;">x</text>
+	<text x="-60.9" y="811.6" style="color:black; overflow:visible; fill:#204a87; font-size:24px;">2</text>
+	<text x="-30.4" y="824.7" style="overflow:visible; fill:black;">+ </text>
+	<text x="7.7" y="824.7" style="overflow:visible; fill:#729fcf;">b</text>
+	<text x="31" y="824.7" style="overflow:visible; fill:#204a87;">x</text>
+	<text x="68.8" y="824.7" style="overflow:visible; fill:black;">+ </text>
+	<text x="103" y="824.7" style="overflow:visible; fill:#c17d11;">c</text>
+	<text x="142" y="824.7" style="overflow:visible; fill:black;">=</text>
+	<text x="179" y="824.7" style="overflow:visible; fill:black;">0</text>
+ </g>
+</svg>

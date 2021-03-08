@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Children</title>
+        <link rel="stylesheet" href="quiz.css">
+        <style>
+        
+        .center,button,.quizSubmit,.timer{
+            color: #3b81f6;
+        }
+
+        button:hover,.quizSubmit:hover{
+        background-color: #3b81f6;
+        }
+        .quizSubmit,button{
+            border: 5px solid #3b81f6;
+        }
+        </style>
+    </head>
+    <body>
+        <section id="instructions" class="center">
+            <h1 style="font-size: 60px;">Are you ready for a quiz?</h1>
+            <h2>The quiz is timed. Try your best!</h2>
+            <button id="startBtn" onclick="start()" onclick="startTimer()">Start!</button>
+            <a href="adult1.html"><button>Not ready yet.</button></a>
+        </section>
+    
+        <section id="timesout" class="center" style="display: none;">
+            <h1 style="font-size: 60px;">Looks like you’ve run out of time.</h1>
+            <h2>No worries! Try again!</h2>
+            <a href="adultquiz.html"><button>Try Again!</button></a>
+            <a href="adult1.html"><button>Not ready yet.</button></a>
+        </section>
+
+        <section id="quiz" class="row">
+
+            <div class="column1">
+                <div>
+                    <p class="question">1.	Factor the function: 3x<sup>2</sup> - 10x + 3</p>
+                    <ul>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>a.	(x - 3)(3x - 3)</label>
+                    <br>
+                    <div id="wrongString1">
+                    <input class="answer" type="radio" name="q1" value="1">
+                    <label id="correctString1">b.	(x - 3)(3x - 1)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>c.	(x - 3)(3x - 6)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>d.	(x - 1)(3x - 3)</label>
+                        </div>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="question">2.	Factor the function: 5x<sup>2</sup> - 17x - 12</p>
+
+                    <ul>
+                    <input class="answer" type="radio" name="q2" value="1">
+                    <label id="correctString2">a.	(x - 4)(5x + 3)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>b.	(x - 5)(3x + 3)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>c.	(x - 1)(5x + 9)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>d.	(x - 8)(x + 3)</label>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="question">3.	Factor the function: 3x<sup>2</sup> - 13x + 4</p>
+
+                    <ul>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>a.	(x - 1)(5x - 1)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>b.	(x - 8)(3x - 1)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>c.	(x - 4)(x - 1)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="1">
+                    <label id="correctString3">d.	(x - 4)(3x - 1)</label>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="question">4.	Factor the function: 2x<sup>2</sup> + x - 6</p>
+
+                    <ul>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>a.	(x + 1)(2x - 3)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>b.	(x + 2)(2x - 5)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="1">
+                    <label id="correctString4">c.	(x + 2)(2x - 3)</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>d.	(x)(2x - 3)</label>
+                    </ul>
+                </div>
+
+            </div>
+<!--show score upon submit-->
+
+            <div class="column2">
+
+                <p id="time_left"></p>
+
+                <div class="timer">Time left = <br/><span id="timer"></span></div>
+
+                <div class="submitter" id="submit">
+                    <input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
+                </div>
+
+                <div class="submitter">
+                    <a href="index.html" id="home" class="quizSubmit">Home</a>
+                </div>
+
+                <div>
+                    <h2 class="quizScore" id="userScore"></h2>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="adultquiz.js"></script>
+    </body>
+</html>

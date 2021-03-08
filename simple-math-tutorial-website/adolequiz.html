@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Children</title>
+        <link rel="stylesheet" href="quiz.css">
+        <style>
+        .center,button,.quizSubmit,.timer{
+            color: #3dbe7a;
+        }
+
+        button:hover,.quizSubmit:hover{
+        background-color: #3dbe7a;
+        }
+                    .quizSubmit,button{
+            border: 5px solid #3dbe7a;
+        }
+        </style>
+    </head>
+    <body>
+        <section id="instructions" class="center">
+            <h1 style="font-size: 60px;">Are you ready for a quiz?</h1>
+            <h2>The quiz is timed. Try your best!</h2>
+            <button id="startBtn" onclick="start()" onclick="startTimer()">Start!</button>
+            <a href="adole1.html"><button>Not ready yet.</button></a>
+        </section>
+        <section id="timesout" class="center" style="display: none;">
+            <h1 style="font-size: 60px;">Looks like you’ve run out of time.</h1>
+            <h2>No worries! Try again!</h2>
+            <a href="adolequiz.html"><button>Try Again!</button></a>
+            <a href="adole1.html"><button>Not ready yet.</button></a>
+        </section>
+ 
+
+        <section id="quiz" class="row">
+
+        <div class="column1">
+            <div>
+                <p class="question">1. Write an equation to represent the function from the following table of values:<br/><img src="Images/Adole/adorequiz1.png"></p>
+                <ul>
+                <input class="answer" type="radio" name="q1" value="1">
+                <label id="correctString1">a.	y = 2x</label>
+                <br>
+                <div id="wrongString1">
+                <input class="answer" type="radio" name="q1" value="0">
+                <label>b.	y = x + 2</label>
+                <br>
+                <input class="answer" type="radio" name="q1" value="0">
+                <label>c.	y = - x + 2</label>
+                <br>
+                <input class="answer" type="radio" name="q1" value="0">
+                <label>d.	y = - 2x</label>
+                    </div>
+                </ul>
+            </div>
+            <br/><br/>
+            <div>
+                <p class="question">2. Write an equation to represent the function from the following table of values:<br/><img src="Images/Adole/adorequiz2.png"></p>
+
+                <ul>
+                <input class="answer" type="radio" name="q2" value="0">
+                <label>c.	y = 1</label>
+                <br>
+                <input class="answer" type="radio" name="q2" value="1">
+                <label id="correctString2">b.	y = x + 3</label>
+                <br>
+                <input class="answer" type="radio" name="q2" value="0">
+                <label>c.	y = 3x</label>
+                <br>
+                <input class="answer" type="radio" name="q2" value="0">
+                <label>d.	y = x - 3</label>
+                </ul>
+            </div>
+            <br/><br/>
+            <div>
+                <p class="question">3. Which one of the following relations is not a function?<br/><img src="Images/Adole/adorequiz3.png" class="quizpic" width=400px;></p>
+                <ul>
+                <input class="answer" type="radio" name="q3" value="0">
+                <label>a.	A</label>
+                <br>
+                <input class="answer" type="radio" name="q3" value="1">
+                <label id="correctString3">b.	B</label>
+                <br>
+                <input class="answer" type="radio" name="q3" value="0">
+                <label>c.	C</label>
+                <br>
+                <input class="answer" type="radio" name="q3" value="0">
+                <label>d.	D</label>
+                </ul>
+            </div>
+            <br/><br/>
+	  	    <div>
+                <p class="question">4.	Which one of these graphs does not illustrate a function?<br/><img src="Images/Adole/adorequiz4.png" class="quizpic"></p>
+                <ul>
+                <input class="answer" type="radio" name="q4" value="0">
+                <label>a.	A</label>
+                <br>
+                <input class="answer" type="radio" name="q4" value="0">
+                <label>b.	B</label>
+                <br>
+                <input class="answer" type="radio" name="q4" value="1">
+                <label id="correctString4">c.	C</label>
+                <br>
+                <input class="answer" type="radio" name="q4" value="0">
+                <label>d.	D</label>
+                </ul>
+	  	    </div>
+        </div>
+<!--show score upon submit-->
+
+        <div class="column2">
+
+            <p id="time_left"></p>
+
+            <div class="timer">Time left = <br/><span id="timer"></span></div>
+
+            <div class="submitter" id="submit">
+                <input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
+            </div>
+
+            <div class="submitter">
+                <a href="index.html" id="home" class="quizSubmit">Home</a>
+            </div>
+
+            <div>
+               <h2 class="quizScore" id="userScore"></h2>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="adolequiz.js"></script>
+</body>
+</html>

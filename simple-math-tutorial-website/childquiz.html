@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Children</title>
+        <link rel="stylesheet" href="quiz.css">
+        <style>
+        .center,button,.quizSubmit,.timer{
+            color: #f64d3b;
+        }
+
+        button:hover,.quizSubmit:hover{
+        background-color: #f64d3b;
+        }
+                    .quizSubmit,button{
+            border: 5px solid #f64d3b;
+        }
+        </style>
+    </head>
+    <body>
+        <section id="instructions" class="center">
+            <h1 style="font-size: 60px;">Are you ready for a quiz?</h1>
+            <h2>The quiz is timed. Try your best!</h2>
+            <button id="startBtn" onclick="start()" onclick="startTimer()">Start!</button>
+            <a href="child1.html"><button>Not ready yet.</button></a>
+        </section>
+    
+        <section id="timesout" class="center" style="display: none;">
+            <h1 style="font-size: 60px;">Looks like you’ve run out of time.</h1>
+            <h2>No worries! Try again!</h2>
+            <a href="childquiz.html"><button>Try Again!</button></a>
+            <a href="child1.html"><button>Not ready yet.</button></a>
+        </section>
+    
+        <section id="quiz" class="row">
+            <div class="column1">
+	  	        <div>
+                    <p class="question">1. What is the length of the iPad Pro?</p>
+                    <ul>
+                    <input class="answer" type="radio" name="q1" value="1">
+                    <label id="correctString1">a.	33 cm</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>b.	33 m</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>c.	33 km</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>d.	33 mm</label>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="question">2. What is the most possible distance between your house and your school?</p>
+
+                    <ul>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>a.	10 hm</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="1">
+                    <label id="correctString2">b.	10 km</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>c.	10 dm</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>d.	10 cm</label>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="question">3. What is 65.3 hm converted to meter?</p>
+
+                    <ul>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>a.	653 m</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="1">
+                    <label id="correctString3">b.	6530 m</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>c.	653000 m</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>d.	6.53 m</label>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="question">4. What is 29843 m converted to kilometer?</p>
+
+                    <ul>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>a.	2.9843 km</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="1">
+                    <label id="correctString4">b.	29.843 km</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>c.	2984.3 km</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>d.	0.29843 km</label>
+                    </ul>
+                </div>
+                <div>
+                <p class="question">5. What is 3469 m converted to centimeter?</p>
+
+                <ul>
+                <input class="answer" type="radio" name="q5" value="0">
+                <label>a.	346.9 cm</label>
+                <br>
+                <input class="answer" type="radio" name="q5" value="1">
+                <label id="correctString5">b.	346900 cm</label>
+                <br>
+                <input class="answer" type="radio" name="q5" value="0">
+                <label>c.	34690 cm</label>
+                <br>
+                <input class="answer" type="radio" name="q5" value="0">
+                <label>d.	34.69 cm</label>
+                </ul>
+                </div>
+            </div>
+<!--show score upon submit-->
+
+            <div class="column2">
+                <p id="time_left"></p>
+                <div class="timer">Time left = <br/><span id="timer"></span></div>
+                <div class="submitter" id="submit">
+                  <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+                  type="submit" value="Submit" />
+                </div>
+                <div class="submitter">
+                  <a href="index.html" id="home" class="quizSubmit">Home</a>
+                </div>
+
+                <div>
+                    <h2 class="quizScore" id="userScore"></h2>
+                </div>
+            </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="childquiz.js"></script>
+    
+</body>
+</html>
+
+
